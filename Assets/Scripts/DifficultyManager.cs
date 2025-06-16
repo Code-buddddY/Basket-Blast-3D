@@ -6,7 +6,7 @@ public class DifficultyManager : MonoBehaviour
     public static DifficultyManager Instance;
 
     [Header("Difficulty Settings")]
-    public float windStrength = 0f;
+    public float windStrength = 0f;     
     public bool windTrailsEnabled = false;
     public float poleMoveSpeed = 0f;
 
@@ -64,8 +64,8 @@ public class DifficultyManager : MonoBehaviour
     public void PlayGame()
     {
         if (!isDifficultySet)
-            SetNormalMode(); // Only if no difficulty was selected
+            SetNormalMode();
 
-        SceneManager.LoadScene("SampleScene"); // Replace with your actual gameplay scene
+        SceneManager.LoadScene("SampleScene");
     }
 }
